@@ -88,12 +88,13 @@
     "time-grunt": "~0.3.1"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": "4.2.1"
   },
   "scripts": {
     "start": "node server/app.js",
     "test": "grunt test",
-    "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update"
+    "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update",
+    "deploy": "grunt buildcontrol:heroku"
   },
   "private": true
 }

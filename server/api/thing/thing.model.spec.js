@@ -2,4 +2,4 @@
 
 var should = require('should');
 var app = require('../../app');
-var User = require('./user.model');
+var Thing = require('./thing.model');
